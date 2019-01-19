@@ -10,6 +10,7 @@ $ npm install @ice-point/webpack-server-qrcode
 
 ## 使用
 
+### webpack.config.js
 ```JavaScript
 const WebpackServerQRcode = require('webpack-server-qrcode')
 
