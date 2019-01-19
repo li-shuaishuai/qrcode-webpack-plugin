@@ -2,6 +2,8 @@
 
 webpack-dev-server运行时在控制台打印二维码
 
+![webpack-server-qrcode](https://raw.githubusercontent.com/li-shuaishuai/webpack-server-qrcode/master/static/webpack-server-qrcode.png)
+
 ## 安装
 
 ```bash
