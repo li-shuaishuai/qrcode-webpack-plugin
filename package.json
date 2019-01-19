@@ -20,5 +20,8 @@
   "homepage": "https://github.com/li-shuaishuai/webpack-server-qrcode#readme",
   "publishConfig": {
     "access": "public"
+  },
+  "dependencies": {
+    "qrcode-terminal": "^0.12.0"
   }
 }
