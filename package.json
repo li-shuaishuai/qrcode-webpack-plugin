@@ -1,0 +1,24 @@
+{
+  "name": "@ice-point/webpack-server-qrcode",
+  "version": "1.0.0",
+  "description": "Print the QR code on the console after running webpack-dev-server",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/li-shuaishuai/webpack-server-qrcode.git"
+  },
+  "keywords": [
+    "webpack",
+    "webpack-plugin",
+    "qrcode"
+  ],
+  "author": "lishuaishuai",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/li-shuaishuai/webpack-server-qrcode/issues"
+  },
+  "homepage": "https://github.com/li-shuaishuai/webpack-server-qrcode#readme",
+  "publishConfig": {
+    "access": "public"
+  }
+}
