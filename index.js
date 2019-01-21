@@ -1,5 +1,5 @@
 const os = require('os')
-var qrcode = require('qrcode-terminal')
+const qrcode = require('qrcode-terminal')
 
 class serverQRcode {
   constructor(options) {
@@ -33,12 +33,16 @@ class serverQRcode {
   }
 
   apply(compiler) {
-    const port = compiler.options.devServer.port
-    const ips = this.getIPAdress()
-    ips.forEach(ip => {
-      const url = `http://${ip}:${port}`
-      this.printQRcode(url)
-    })
+    const devServer = compiler.options.devServer
+    if (!devServer) {
+      console.warn('webpack-server-qrcode: needs to start webpack-dev-server')
+      return
+    }
+    const protocol = devServer.https ? 'https' : 'http';
+    const port = devServer.port
+    const _ip = this.getIPAdress()[0]
+    const url = `${protocol}://${_ip}:${port}`
+    this.printQRcode(url)
   }
 }
 
