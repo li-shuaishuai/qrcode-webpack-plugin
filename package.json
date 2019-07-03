@@ -1,6 +1,6 @@
 {
   "name": "qrcode-webpack-plugin",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Print the QR code on the console after running webpack-dev-server",
   "main": "index.js",
   "repository": {
