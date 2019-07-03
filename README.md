@@ -1,22 +1,23 @@
-# webpack-server-qrcode
+# devserver-qrcode-webpack-plugin
+
 ![](https://img.shields.io/npm/v/qrcode-webpack-plugin.svg)
 ![](https://img.shields.io/github/license/li-shuaishuai/devserver-qrcode-webpack-plugin.svg)
 
 webpack-dev-server运行时在控制台打印二维码
 
-![webpack-server-qrcode](https://raw.githubusercontent.com/li-shuaishuai/webpack-server-qrcode/master/static/webpack-server-qrcode.png)
+![webpack-server-qrcode](https://raw.githubusercontent.com/li-shuaishuai/devserver-qrcode-webpack-plugin/master/static/webpack-server-qrcode.png)
 
 ## 安装
 
 ```bash
-$ npm install @ice-point/webpack-server-qrcode
+$ npm install qrcode-webpack-plugin
 ```
 
 ## 使用
 
 ### webpack.config.js
 ```JavaScript
-const WebpackServerQRcode = require('@ice-point/webpack-server-qrcode')
+const QRcodeWebpackPlugin = require('qrcode-webpack-plugin')
 
 module.exports = {
   devServer: {
@@ -24,7 +25,7 @@ module.exports = {
     host: '0.0.0.0'
   },
   plugins: [
-    new WebpackServerQRcode()
+    new QRcodeWebpackPlugin()
   ]
 }
 ```
@@ -32,4 +33,4 @@ module.exports = {
 
 ## License
 
-[MIT](https://github.com/li-shuaishuai/webpack-server-qrcode/blob/master/LICENSE)
+[MIT](https://github.com/li-shuaishuai/devserver-qrcode-webpack-plugin/blob/master/LICENSE)
