@@ -1,6 +1,6 @@
 {
-  "name": "@ice-point/webpack-server-qrcode",
-  "version": "1.0.1",
+  "name": "qrcode-webpack-plugin",
+  "version": "1.0.2",
   "description": "Print the QR code on the console after running webpack-dev-server",
   "main": "index.js",
   "repository": {

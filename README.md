@@ -1,6 +1,6 @@
 # webpack-server-qrcode
-![](https://img.shields.io/npm/v/@ice-point/webpack-server-qrcode.svg)
-![](https://img.shields.io/github/license/li-shuaishuai/webpack-server-qrcode.svg)
+![](https://img.shields.io/npm/v/qrcode-webpack-plugin.svg)
+![](https://img.shields.io/github/license/li-shuaishuai/devserver-qrcode-webpack-plugin.svg)
 
 webpack-dev-server运行时在控制台打印二维码
 

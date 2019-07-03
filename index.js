@@ -14,7 +14,11 @@ class serverQRcode {
       let iface = interfaces[devName]
       for (let i = 0; i < iface.length; i++) {
         let alias = iface[i]
-        if (alias.family === 'IPv4' && alias.address !== '127.0.0.1' && !alias.internal) {
+        if (
+          alias.family === 'IPv4' &&
+          alias.address !== '127.0.0.1' &&
+          !alias.internal
+        ) {
           ips.push(alias.address)
         }
       }
@@ -24,12 +28,16 @@ class serverQRcode {
 
   printQRcode(url) {
     this.qrcode.setErrorLevel('M')
-    this.qrcode.generate(url, {
-      small: true
-    }, (qrcode) => {
-      console.log(qrcode)
-      console.log(url)
-    })
+    this.qrcode.generate(
+      url,
+      {
+        small: true
+      },
+      qrcode => {
+        console.log(qrcode)
+        console.log(url)
+      }
+    )
   }
 
   apply(compiler) {
@@ -38,7 +46,8 @@ class serverQRcode {
       console.warn('webpack-server-qrcode: needs to start webpack-dev-server')
       return
     }
-    const protocol = devServer.https ? 'https' : 'http';
+
+    const protocol = devServer.https ? 'https' : 'http'
     const port = devServer.port
     const _ip = this.getIPAdress()[0]
     const url = `${protocol}://${_ip}:${port}`
