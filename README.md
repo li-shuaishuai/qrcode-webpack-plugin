@@ -1,4 +1,4 @@
-# devserver-qrcode-webpack-plugin
+# qrcode-webpack-plugin
 
 ![](https://img.shields.io/npm/v/qrcode-webpack-plugin.svg)
 ![](https://img.shields.io/github/license/li-shuaishuai/devserver-qrcode-webpack-plugin.svg)
